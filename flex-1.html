@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Örnekleri 1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        section {
+            background-color: aquamarine;
+            padding: 16px;
+            border-radius: 16px;
+
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            justify-content: space-evenly;
+            align-items: center;
+          
+        }
+        .elma {
+            background-color: red;
+           /* width: 200px;*/
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+        div:first-of-type
+        {
+            background-color: green;
+           /* width: 100px; */
+        }
+        div:last-of-type {
+            background-color: orange;
+            /* width: 50px; */
+        }
+        div {
+           /* height: 50px; */
+            padding: 8px;
+        }
+
+    </style>
+<body>
+    
+
+    <section>
+        <div>KUTU 1</div>
+        <div class="elma">KUTU 2</div>
+        <div>KUTU 3</div>
+    </section>
+</body>
+</html>
